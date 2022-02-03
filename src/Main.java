@@ -1,6 +1,7 @@
 import ArrayListExercise.ArrayListExercise;
 import Book.*;
 import Grass.Grass;
+import Kvadrat.Kvadrat;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -29,7 +30,7 @@ public class Main {
         System.out.println(b.doesBibliotekHaveBook(testBook));
 
 
-        System.out.println("---Grass Exercise---");
+        /*System.out.println("---Grass Exercise---");
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("How long is your current grass");
@@ -45,7 +46,26 @@ public class Main {
         //der er noget fejl i koden, hvor den ikke vil retunere de dage der er til græsset skal slåes.
         //Vi har taget lidt inspiration fra Elisa for at se om det ville virke
 
-        System.out.println("---Kvadrat---");
+         */
+
+        System.out.println("---Kvadrat Exercise---");
+
+        Scanner scan = new Scanner(System.in);
+        Kvadrat kvadrat = new Kvadrat();
+
+        System.out.println("Please input a number: ");
+        int number = scan.nextInt();
+
+        System.out.println("Please input a sign: ");
+        String sign = scan.next();
+
+
+        System.out.println("Here is your square");
+        kvadrat.printASquare(number, sign);
+
+
+
+
 
 
     }
