@@ -49,10 +49,18 @@ public class Main {
          */
 
         System.out.println("---Kvadrat Exercise---");
+        //Inspireret af Laura
 
+        Kvadrat kvadrat = new Kvadrat();
+        Scanner scan = new Scanner(System.in);
 
+        System.out.println("Giv us a number, any number will do; ");
+        int userNumber = scan.nextInt();
+        System.out.println("Giv us a sign; ");
+        String userSign = scan.next();
 
+        System.out.println("Here are your square:");
+        kvadrat.printASquare(userNumber,userSign);
 
-
-    }
+        }
 }
