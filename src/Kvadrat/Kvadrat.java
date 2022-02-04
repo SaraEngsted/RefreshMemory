@@ -6,11 +6,11 @@ public class Kvadrat {
 
     public void printASquare(int numbers, String sign) {
 
-        for (int i = 1; i <= numbers ; i++) {
-            for (int j = 1; j <= numbers ; j++) {
-                System.out.print(" " + sign + " ");
+        for (int i = 1; i <= numbers ; i++) {//Rows
+            for (int j = 1; j <= numbers ; j++) {//Columns
+                System.out.print(" " + sign + " ");//Print side-by-side
             }
-            System.out.println();
+            System.out.println();//Print a new, empty, line
         }
     }
 }
