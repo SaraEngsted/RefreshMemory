@@ -3,6 +3,7 @@ import Book.*;
 import Grass.Grass;
 import Kvadrat.Kvadrat;
 import ProperCase.ProperCase;
+import Searching.Seearching;
 import Sorting.Sorting;
 
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class Main {
         System.out.println(b.doesBibliotekHaveBook(testBook));
 
 
-        /*System.out.println("---Grass Exercise---");
+        System.out.println("---Grass Exercise---");
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("How long is your current grass");
@@ -65,8 +66,6 @@ public class Main {
         kvadrat.printASquare(userNumber,userSign);
 
 
-         */
-
         System.out.println("---Proper Case Exercise---");
 
         ProperCase properCase = new ProperCase();
@@ -77,6 +76,21 @@ public class Main {
 
         Sorting sorting = new Sorting();
         sorting.sortingStrings();
+
+
+        System.out.println("---Searching Exercise---");
+
+        Seearching searching = new Seearching();
+
+        String Array[] = {"Elisa", "Søs", "Mo", "Laura", "Sara"};
+        String chooseWord = "Erik";
+
+        System.out.println(searching.StringIndex(Array, chooseWord));
+
+
+
+        int notFound = searching.StringIndex(Array, chooseWord);
+        System.out.println(notFound);
 
     }
 }
