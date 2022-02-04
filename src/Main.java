@@ -2,6 +2,7 @@ import ArrayListExercise.ArrayListExercise;
 import Book.*;
 import Grass.Grass;
 import Kvadrat.Kvadrat;
+import ProperCase.ProperCase;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -26,7 +27,7 @@ public class Main {
         System.out.println("---Book Exercise---");
 
         Biblioteket b = new Biblioteket();
-        Book testBook = new Book(1234567,"Kvinde",2020);
+        Book testBook = new Book(1234567, "Kvinde", 2020);
         System.out.println(b.doesBibliotekHaveBook(testBook));
 
 
@@ -46,7 +47,7 @@ public class Main {
         //der er noget fejl i koden, hvor den ikke vil retunere de dage der er til græsset skal slåes.
         //Vi har taget lidt inspiration fra Elisa for at se om det ville virke
 
-         */
+
 
         System.out.println("---Kvadrat Exercise---");
         //Inspireret af Laura
@@ -62,5 +63,17 @@ public class Main {
         System.out.println("Here are your square:");
         kvadrat.printASquare(userNumber,userSign);
 
-        }
+
+         */
+
+        System.out.println("---Proper Case Exercise---");
+
+        ProperCase properCase = new ProperCase();
+        System.out.println(properCase.sentence("HEJ jeg er DEN BedsTe"));
+
+
+        System.out.println("---Sorting Exercise---");
+
+
+    }
 }
