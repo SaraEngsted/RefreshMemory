@@ -3,6 +3,7 @@ import Book.*;
 import Grass.Grass;
 import Kvadrat.Kvadrat;
 import ProperCase.ProperCase;
+import Sorting.Sorting;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -74,6 +75,8 @@ public class Main {
 
         System.out.println("---Sorting Exercise---");
 
+        Sorting sorting = new Sorting();
+        sorting.sortingStrings();
 
     }
 }
