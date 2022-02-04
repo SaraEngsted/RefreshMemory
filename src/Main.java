@@ -50,20 +50,6 @@ public class Main {
 
         System.out.println("---Kvadrat Exercise---");
 
-        Scanner scan = new Scanner(System.in);
-        Kvadrat kvadrat = new Kvadrat();
-
-        System.out.println("Please input a number: ");
-        int number = scan.nextInt();
-
-        System.out.println("Please input a sign: ");
-        String sign = scan.next();
-
-
-        System.out.println("Here is your square");
-        kvadrat.printASquare(number, sign);
-
-
 
 
 
